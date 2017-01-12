@@ -1,11 +1,18 @@
 doctype html
 html
-	head
-	
-		title #{title}: FIVE STARS SERVICE TRAITEUR
-		meta(http-equiv='X-UA-Compatible', content='IE=edge', charset='utf-8')
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
-		link(rel='stylesheet', href='/stylesheets/style.css')
+	meta(charset='utf-8')
+	title Foundry Multi-purpose HTML Template
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+	<link href="stylesheets/carousel.css" rel="stylesheet">
+	link(href='stylesheets/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+	link(href='stylesheets/themify-icons.css', rel='stylesheet', type='text/css', media='all')
+	link(href='stylesheets/flexslider.css', rel='stylesheet', type='text/css', media='all')
+	link(href='stylesheets/lightbox.min.css', rel='stylesheet', type='text/css', media='all')
+	link(href='stylesheets/ytplayer.css', rel='stylesheet', type='text/css', media='all')
+	link(href='stylesheets/theme.css', rel='stylesheet', type='text/css', media='all')
+	link(href='stylesheets/custom.css', rel='stylesheet', type='text/css', media='all')
+	link(href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600', rel='stylesheet', type='text/css')
 	body
 		nav.navbar.navbar-inverse.navbar-fixed-top
 				.container
@@ -26,9 +33,76 @@ html
 								a(href='/contact') Contact
 							li(class=(title==='About' ? 'active' : ''))
 								a(href='/about') About Us
+
 							
 		block content
-		footer
-			p &copy; 2016 GSE.Patisserie
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')   
-		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+		footer.footer-1.bg-dark
+		.container
+			.row
+				.col-md-3.col-sm-6
+					img.logo(alt='Logo', src='img/logo-light.png')
+				.col-md-3.col-sm-6
+					.widget
+						h6.title Recent Posts
+						hr
+						ul.link-list.recent-posts
+							li
+								a(href='#') Hugging pugs is super trendy
+								span.date
+									February
+									span.number 14, 2015
+							li
+								a(href='#') Spinning vinyl is oh so cool
+									span.date
+									February
+							li
+								a(href='#') Superior theme design by pros
+									span.date
+										January
+										span.number 27, 2015
+				.col-md-3.col-sm-6
+					.widget
+						h6.title Latest Updates
+						hr
+						.twitter-feed
+						// end of widget
+				.col-md-3.col-sm-6
+					.widget
+						h6.title Instagram
+						hr
+						.instafeed(data-user-name='funsizeco')
+						ul
+			.row
+				col-sm-6.text-left
+					span.sub &copy; Copyright 2015 - Medium Rare
+				.col-sm-6.text-right
+					ul.list-inline.social-list
+						li
+							a(href='#')
+							i.ti-twitter-alt
+						li
+							a(href='#')
+							i.ti-facebook
+						li
+							a(href='#')
+							i.ti-dribbble
+						li
+							a(href='#')
+							i.ti-vimeo-alt
+		a.btn.btn-sm.fade-half.back-to-top.inner-link(href='#top') Top
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')   
+	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+	script.window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
+	script(src='javascripts/jquery.min.js')
+	script(src='javascripts/bootstrap.min.js')
+	script(src='javascripts/flexslider.min.js')
+	script(src='javascripts/lightbox.min.js')
+	script(src='javascripts/masonry.min.js')
+	script(src='js/twitterfetcher.min.js')
+	script(src='javascripts/spectragram.min.js')
+	script(src='javascripts/ytplayer.min.js')
+	script(src='javascripts/countdown.min.js')
+	script(src='javascripts/smooth-scroll.min.js')
+	script(src='javascripts/parallax.js')
+	script(src='javascripts/scripts.js')
+

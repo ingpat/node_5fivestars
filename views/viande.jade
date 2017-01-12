@@ -2,11 +2,60 @@ extends layout
 
 block content
 	.container
-		h1 Viande et Fruits de Mer préparés
-		p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-				
-		ul
-			li les vitamines
-			li les cereales
-			li le feuilles medicinales
-		p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+		br
+		br
+		h1 Viande et Fruits de Mer Préparés
+		#myCarousel.carousel.slide(data-ride='carousel')
+			// Indicators
+			
+			ol.carousel-indicators
+				li.active(data-target='#myCarousel', data-slide-to='0')
+				li(data-target='#myCarousel', data-slide-to='1')
+				li(data-target='#myCarousel', data-slide-to='2')
+			.carousel-inner(role='listbox')
+				.item.active
+					img.first-slide(src='img/logo.png')
+					.container
+						.carousel-caption
+							h1 Example headline.
+							p Note: If you&apos;re viewing this page via a code file://URL, the &quot;next&quot; and &quot;previous&quot; Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+							p a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+				.item
+					img.second-slide(src='img/plat.jpg')
+					.container
+						.carousel-caption
+							h1 Another example headline.
+							p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							p a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+				.item
+					img.third-slide(src='img/plat22.jpg')
+					.container
+						.carousel-caption
+							h1 One more for good measure.
+							p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							p a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+							a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+							span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+							span.sr-only Previous
+						a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+							span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+							span.sr-only Next
+		// /.carousel
+	
+		.container.marketing
+			.row
+				.col-md-3
+					img.img-circle(src='img/gateau11.png', alt='Generic placeholder image', width='140', height='140')
+					h2 Service Patisserie
+					p Five Stars est une entreprise privée a but lucratif. Five Stars est une entreprise familiale dirigée par Mme Claudette S Louis, bien connue dans le milieu culinaire haitien. Ex-responsable de Droits d'Or Restaurant pendant plus de six (6) ans. elle travaille actuellement  à titre de consultante pour differents restaurants de la capitale.
+					a.btn.btn-default(href='/patisserie') View Details &raquo;
+				.col-md-6
+					img.img-circle(src='img/plat22.jpg', alt='Generic placeholder image', width='140', height='140')
+					h2 Viande et Fruits de Mer
+					p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+					a.btn.btn-default(href='/viande') View Details &raquo;
+				.col-md-3
+					img.img-circle(src='img/serv11.jpg', alt='Generic placeholder image', width='140', height='140')
+					h2 Service Traiteur
+					p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+					a.btn.btn-default(href='/traiteur') View Details &raquo;

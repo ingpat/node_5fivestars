@@ -1,28 +1,47 @@
 extends layout
 
 block content
-	#myCarousel.carousel.slide(data-ride='carousel')
-		ol.carousel-indicators
-			li.active(data-target='#myCarousel', data-slide-to='0')        
-			li(data-target='#myCarousel', data-slide-to='1')        
-			li(data-target='#myCarousel', data-slide-to='2')      
-		.carousel-inner(role='listbox')
-			.item.active
-				img.first-slide(src='images/bannr22.png', alt='First slide') 
-	.container.marketing
-			.row
-				.col-md-4
-					img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-					h2 About Us
-					p Five Stars est une entreprise privée a but lucratif. Five Stars est une entreprise familiale dirigée par Mme Claudette S Louis, bien connue dans le milieu culinaire haitien. Ex-responsable de Droits d'Or Restaurant pendant plus de six (6) ans. elle travaille actuellement  à titre de consultante pour differents restaurants de la capitale.
-					a.btn.btn-default(href='/about') View Details &raquo;
-				.col-md-4
-					img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-					h2 Services
-					p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					a.btn.btn-default(href='/service') View Details &raquo;
-				.col-md-4
-					img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
-					h2 Get in Touch
-					p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-					a.btn.btn-default(href='#') View Details &raquo;
+	.main-container					
+					section.image-bg.bg-dark.parallax.overlay.pt120.pb120
+						.background-image-holder
+							img.background-image(alt='Background Image', src='img/logo1.png')
+						.container
+							.row
+								.col-sm-12.text-center
+									h1.uppercase.mb8 Five Stars
+							// end of row
+						// end of container
+					section.image-bg.bg-dark.parallax.overlay.pt120.pb120
+							.background-image-holder
+								img.background-image(alt='Background Image', src='img/resto2.jpg')
+						.container
+							.row
+								.col-sm-12.text-center
+									p.lead.mb40 A brief description of the project.
+									a.btn.btn-lg.btn-white.mb0(href='#') Open Project
+							// end of row
+						// end of container
+					section.image-bg.bg-dark.parallax.overlay.pt120.pb120
+						.background-image-holder
+							img.background-image(alt='Background Image', src='img/serv111.jpg')
+						.container
+							.row
+								.col-sm-12.text-center
+									h2.uppercase.mb8 The Lonely Dog
+									p.lead.mb40 A brief description of the project.
+									a.btn.btn-lg.btn-white.mb0(href='#') Open Project
+							// end of row
+						// end of container
+					section.image-bg.bg-dark.parallax.overlay.pt120.pb120
+						.background-image-holder
+							img.background-image(alt='Background Image', src='img/gateau11.png')
+						.container
+							.row
+								.col-sm-12.text-center
+									h2.uppercase.mb8 Summer Lovin&apos;
+									p.lead.mb40 A brief description of the project.
+									a.btn.btn-lg.btn-white.mb0(href='#') Open Project
+							// end of row
+						// end of container
+
+	

@@ -2,11 +2,68 @@ extends layout
 
 block content
 	.container
-		h1 Service Traiteur
-		p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-				
-		ul
-			li les vitamines
-			li les cereales
-			li le feuilles medicinales
-		p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+		br
+		br
+		
+		#myCarousel.carousel.slide(data-ride='carousel')
+			// Indicators
+			
+			ol.carousel-indicators
+				li.active(data-target='#myCarousel', data-slide-to='0')
+				li(data-target='#myCarousel', data-slide-to='1')
+				li(data-target='#myCarousel', data-slide-to='2')
+			.carousel-inner(role='listbox')
+				.item.active
+					img.first-slide(src='img/serv2.jpg', width='1000', height='50')
+					.container
+						.carousel-caption
+							h1 Example headline.
+							p Note: If you&apos;re viewing this page via a code file://URL, the &quot;next&quot; and &quot;previous&quot; Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+							p a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+				.item
+					img.second-slide(src='img/rectable.png', width='1000', height='50')
+					.container
+						.carousel-caption
+							h1 Another example headline.
+							p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							p a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+				.item
+					img.third-slide(src='img/serv4.jpg', width='1000', height='50')
+					.container
+						.carousel-caption
+							h1 One more for good measure.
+							p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							p a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+							a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+							span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+							span.sr-only Previous
+						a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+							span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+							span.sr-only Next
+		// /.carousel
+	
+		.container.marketing
+			.row
+				.col-md-3
+					h4 Des gateaux pour toutesles occasions
+					img.img-rectangle(src='img/mouchoir.jpg', alt='Generic placeholder image', width='250', height='250')
+					p
+					img.img-rectangle(src='img/deco.png', alt='Generic placeholder image', width='250', height='250')
+					a.btn.btn-default(href='/patisserie') View Details &raquo;
+				.col-md-6					
+
+					.jumbotron
+						h3 Décoration
+						img(src='img/serv2.jpg')
+					.jumbotron
+						h3 Diner
+						img(src='img/serv5.jpg')
+					
+					p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+					a.btn.btn-default(href='/viande') View Details &raquo;
+				.col-md-3
+					img.img-rectangle(src='img/gateau11.png', alt='Generic placeholder image', width='140', height='140')
+					a.btn.btn-default(href='/patisserie') View Details &raquo;
+
+					img.img-circle(src='img/plat22.jpg', alt='Generic placeholder image', width='140', height='140')
+					a.btn.btn-default(href='/traiteur') View Details &raquo;
